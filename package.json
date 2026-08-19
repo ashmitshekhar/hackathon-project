@@ -1,0 +1,10 @@
+{
+  "name": "hackpack-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix hackpack_platform-main run dev",
+    "build": "npm --prefix hackpack_platform-main run build",
+    "backend": "npm --prefix hackpack_platform-main/backend run dev",
+    "start": "npm --prefix hackpack_platform-main run start"
+  }
+}

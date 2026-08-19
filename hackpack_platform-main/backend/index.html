@@ -1,0 +1,69 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login/Signup Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="login-form">
+                <h2>Login</h2>
+                <input type="email" id="login-email" placeholder="Email">
+                <input type="password" id="login-password" placeholder="Password">
+                <button onclick="login()">Login</button>
+                <p>Don't have an account? <span onclick="showSignup()">Signup</span></p>
+            </div>
+            <div id="signup-form" style="display: none;">
+                <h2>Signup</h2>
+                <input type="text" id="signup-name" placeholder="Full Name">
+                <input type="email" id="signup-email" placeholder="Email">
+                <input type="password" id="signup-password" placeholder="Password">
+                <input type="text" id="linkedin" placeholder="LinkedIn URL">
+                <input type="text" id="github" placeholder="GitHub URL">
+                <button onclick="signup()">Signup</button>
+                <p>Have an account? <span onclick="showLogin()">Login</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Dashboard -->
+    <div id="dashboard" style="display: none;">
+        <header>
+            <h1>Hackathon Platform</h1>
+            <button onclick="logout()">Logout</button>
+        </header>
+
+        <!-- Team Management -->
+        <section id="team-management">
+            <h2>Team Management</h2>
+            <input type="text" id="team-name" placeholder="Team Name">
+            <button onclick="createTeam()">Create Team</button>
+            <div id="teams-list"></div>
+        </section>
+
+        <!-- Live Hackathons -->
+        <section id="live-hackathons">
+            <h2>Live Hackathons</h2>
+            <div id="hackathon-list"></div>
+        </section>
+
+        <!-- Profile Verification -->
+        <section id="verification">
+            <h2>Complete Verification</h2>
+            <div id="questionnaire">
+                <p>Q1: What's your strongest programming language?</p>
+                <input type="text" id="q1">
+                <button onclick="submitVerification()">Submit Verification</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
