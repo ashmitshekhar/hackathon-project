@@ -4,6 +4,7 @@ const cors = require('cors');
 const connectDB = require('./db');
 const authRoutes = require('./auth');
 const hackathonRoutes = require('./hackathonRoutes');
+const chatRoutes = require('./chatRoutes');
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(express.json());
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/hackathons', hackathonRoutes);
+app.use('/api/chat', chatRoutes);
 app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', service: 'hackpack-api' });
 });

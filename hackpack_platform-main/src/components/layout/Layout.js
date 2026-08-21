@@ -1,5 +1,6 @@
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Chatbot from './Chatbot';
 import { Box } from '@mui/material';
 
 function Layout({ children }) {
@@ -29,6 +30,7 @@ function Layout({ children }) {
         {children}
       </Box>
       <Footer />
+      <Chatbot />
     </Box>
   );
 }

@@ -1,5 +1,16 @@
 # Getting Started with Create React App
 
+## HackPack AI
+
+The platform includes a floating HackPack AI assistant on every page. It provides built-in hackathon guidance without configuration. To enable model-powered replies, add an OpenAI key to `backend/.env`:
+
+```env
+OPENAI_API_KEY=your-key-here
+OPENAI_MODEL=gpt-4o-mini
+```
+
+Start the frontend and backend separately with `npm run dev` in the project root and `npm run dev` in `backend`.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

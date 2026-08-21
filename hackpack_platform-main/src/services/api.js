@@ -31,4 +31,8 @@ export const teamApi = {
 	createTeam: (team) => request('/teams', { method: 'POST', body: JSON.stringify(team) }),
 };
 
+export const chatApi = {
+	send: (messages) => request('/chat', { method: 'POST', body: JSON.stringify({ messages }) }),
+};
+
  
