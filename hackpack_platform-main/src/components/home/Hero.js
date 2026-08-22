@@ -5,44 +5,23 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import GroupIcon from '@mui/icons-material/Group';
 
 function Hero() {
-  const [text, setText] = useState('');
   const [subText, setSubText] = useState('');
   const fullText = 'Start Your Hackathon Journey Today!';
   const fullSubText = 'Your Ultimate Hackathon Companion - Connect with innovators, join exciting hackathons, and showcase your skills!';
-  const [showCursor, setShowCursor] = useState(true);
 
-  // Typewriter effect for main heading - simplified animation
+  // Keep the subtitle typewriter effect independent from the static heading.
   useEffect(() => {
-    let currentIndex = 0;
-    const typingInterval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        setText(fullText.slice(0, currentIndex));
-        currentIndex++;
+    let subIndex = 0;
+    const subTypingInterval = setInterval(() => {
+      if (subIndex <= fullSubText.length) {
+        setSubText(fullSubText.slice(0, subIndex));
+        subIndex++;
       } else {
-        clearInterval(typingInterval);
-        // Start subtitle animation after main heading
-        let subIndex = 0;
-        const subTypingInterval = setInterval(() => {
-          if (subIndex <= fullSubText.length) {
-            setSubText(fullSubText.slice(0, subIndex));
-            subIndex++;
-          } else {
-            clearInterval(subTypingInterval);
-          }
-        }, 50);
+        clearInterval(subTypingInterval);
       }
-    }, 150);
+    }, 20);
 
-    return () => clearInterval(typingInterval);
-  }, []);
-
-  // Cursor blinking effect
-  useEffect(() => {
-    const cursorInterval = setInterval(() => {
-      setShowCursor(prev => !prev);
-    }, 500);
-
-    return () => clearInterval(cursorInterval);
+    return () => clearInterval(subTypingInterval);
   }, []);
 
   return (
@@ -72,21 +51,9 @@ function Hero() {
         <Box
           sx={{
             position: 'relative',
+            width: '100%',
             mb: 4,
-            '&::before': {
-              content: '""',
-              position: 'absolute',
-              top: -20,
-              left: -20,
-              right: -20,
-              bottom: -20,
-              background: 'radial-gradient(circle, rgba(214, 166, 107, 0.16) 0%, transparent 70%)',
-              animation: 'pulse 2s ease-in-out infinite',
-              '@keyframes pulse': {
-                '0%, 100%': { transform: 'scale(1)' },
-                '50%': { transform: 'scale(1.1)' },
-              },
-            },
+            textAlign: 'center',
           }}
         >
           <Typography
@@ -101,20 +68,14 @@ function Hero() {
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               textShadow: '0 0 30px rgba(142, 171, 195, 0.24)',
-              opacity: text.length > 0 ? 1 : 0,
-              transition: 'opacity 0.5s ease',
-              '&::after': {
-                content: showCursor ? '"│"' : '""',
-                color: '#b8cede',
-                marginLeft: '5px',
-                animation: 'blink 1s step-end infinite',
-              },
-              '@keyframes blink': {
-                '50%': { opacity: 0 },
+              animation: 'heroPop 0.7s cubic-bezier(0.22, 1, 0.36, 1) both',
+              '@keyframes heroPop': {
+                '0%': { opacity: 0, transform: 'scale(0.92) translateY(12px)' },
+                '100%': { opacity: 1, transform: 'scale(1) translateY(0)' },
               },
             }}
           >
-            {text}
+            {fullText}
           </Typography>
         </Box>
 
@@ -123,7 +84,7 @@ function Hero() {
             maxWidth: '800px',
             position: 'relative',
             mb: 6,
-            opacity: text.length === fullText.length ? 1 : 0,
+            opacity: 1,
             transition: 'opacity 0.5s ease',
           }}
         >
