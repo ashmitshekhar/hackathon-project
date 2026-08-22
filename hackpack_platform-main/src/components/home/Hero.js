@@ -7,7 +7,7 @@ import GroupIcon from '@mui/icons-material/Group';
 function Hero() {
   const [text, setText] = useState('');
   const [subText, setSubText] = useState('');
-  const fullText = 'Hackathon Hub';
+  const fullText = 'Start Your Hackathon Journey Today!';
   const fullSubText = 'Your Ultimate Hackathon Companion - Connect with innovators, join exciting hackathons, and showcase your skills!';
   const [showCursor, setShowCursor] = useState(true);
 
@@ -80,7 +80,7 @@ function Hero() {
               left: -20,
               right: -20,
               bottom: -20,
-              background: 'radial-gradient(circle, rgba(255, 77, 77, 0.1) 0%, transparent 70%)',
+              background: 'radial-gradient(circle, rgba(214, 166, 107, 0.16) 0%, transparent 70%)',
               animation: 'pulse 2s ease-in-out infinite',
               '@keyframes pulse': {
                 '0%, 100%': { transform: 'scale(1)' },
@@ -96,16 +96,16 @@ function Hero() {
               fontWeight: 800,
               position: 'relative',
               display: 'inline-block',
-              background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+              background: 'linear-gradient(135deg, #b8cede, #8eabc3 58%, #5f7f9b)',
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
-              textShadow: '0 0 30px rgba(255, 77, 77, 0.3)',
+              textShadow: '0 0 30px rgba(142, 171, 195, 0.24)',
               opacity: text.length > 0 ? 1 : 0,
               transition: 'opacity 0.5s ease',
               '&::after': {
                 content: showCursor ? '"│"' : '""',
-                color: '#FF4D4D',
+                color: '#b8cede',
                 marginLeft: '5px',
                 animation: 'blink 1s step-end infinite',
               },
@@ -141,7 +141,7 @@ function Hero() {
                 transform: 'translateX(-50%)',
                 width: '60%',
                 height: '2px',
-                background: 'linear-gradient(90deg, transparent, #FF4D4D, transparent)',
+                background: 'linear-gradient(90deg, transparent, #8eabc3, transparent)',
               },
             }}
           >
@@ -151,7 +151,7 @@ function Hero() {
               sx={{
                 opacity: subText.length < fullSubText.length ? 1 : 0,
                 animation: 'blink 1s step-end infinite',
-                color: '#FF4D4D',
+                color: '#8eabc3',
               }}
             >
               |
@@ -176,7 +176,7 @@ function Hero() {
             variant="contained"
             endIcon={<ArrowForwardIcon />}
             sx={{
-              background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+              background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
               color: '#fff',
               padding: '12px 24px',
               fontSize: '1.1rem',
@@ -200,7 +200,7 @@ function Hero() {
               },
               '&:hover': {
                 transform: 'perspective(1000px) rotateX(10deg) translateY(-5px)',
-                boxShadow: '0 20px 30px rgba(255, 77, 77, 0.3)',
+                boxShadow: '0 20px 30px rgba(196, 119, 92, 0.28)',
                 '&::before': {
                   transform: 'scaleX(1)',
                 },
@@ -219,22 +219,22 @@ function Hero() {
             variant="outlined"
             startIcon={<GroupIcon />}
             sx={{
-              borderColor: '#FF4D4D',
+              borderColor: 'rgba(184, 206, 222, 0.72)',
               borderWidth: 2,
               color: '#fff',
               padding: '12px 24px',
               fontSize: '1.1rem',
               fontWeight: 600,
               borderRadius: '12px',
-              background: 'rgba(255, 77, 77, 0.1)',
-              backdropFilter: 'blur(10px)',
+              background: 'rgba(31, 35, 42, 0.42)',
+              backdropFilter: 'blur(16px)',
               transform: 'perspective(1000px) rotateX(0deg)',
               transition: 'all 0.3s ease',
               '&:hover': {
-                borderColor: '#F9CB28',
-                background: 'rgba(255, 77, 77, 0.2)',
+                borderColor: '#b8cede',
+                background: 'rgba(214, 166, 107, 0.14)',
                 transform: 'perspective(1000px) rotateX(10deg) translateY(-5px)',
-                boxShadow: '0 20px 30px rgba(255, 77, 77, 0.2)',
+                boxShadow: '0 20px 30px rgba(214, 166, 107, 0.18)',
               },
               '&:active': {
                 transform: 'perspective(1000px) rotateX(0deg) translateY(0)',

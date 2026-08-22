@@ -80,7 +80,7 @@ function Chatbot() {
             color: '#fff',
           }}
         >
-          <Box sx={{ p: 2, background: 'linear-gradient(110deg, #ff4d4d, #e69a2d)', color: '#fff' }}>
+          <Box sx={{ p: 2, background: 'linear-gradient(110deg, #5f7f9b, #8eabc3)', color: '#fff' }}>
             <Stack direction="row" alignItems="center" justifyContent="space-between">
               <Stack direction="row" alignItems="center" spacing={1.25}>
                 <Avatar sx={{ width: 38, height: 38, bgcolor: 'rgba(17,25,40,0.7)' }}>
@@ -107,7 +107,7 @@ function Chatbot() {
                   px: 1.5,
                   py: 1.1,
                   borderRadius: message.role === 'user' ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
-                  bgcolor: message.role === 'user' ? '#ff4d4d' : 'rgba(255,255,255,0.1)',
+                  bgcolor: message.role === 'user' ? '#5f7f9b' : 'rgba(255,255,255,0.1)',
                 }}
               >
                 <Typography variant="body2" sx={{ whiteSpace: 'pre-wrap', color: '#fff' }}>{message.content}</Typography>
@@ -121,12 +121,12 @@ function Chatbot() {
                     label={suggestion}
                     onClick={(event) => sendMessage(event, suggestion)}
                     variant="outlined"
-                    sx={{ color: '#f5c15d', borderColor: 'rgba(245,193,93,0.55)' }}
+                    sx={{ color: '#b8cede', borderColor: 'rgba(184,206,222,0.55)' }}
                   />
                 ))}
               </Stack>
             )}
-            {isLoading && <CircularProgress size={18} sx={{ color: '#f5c15d', alignSelf: 'flex-start' }} />}
+            {isLoading && <CircularProgress size={18} sx={{ color: '#b8cede', alignSelf: 'flex-start' }} />}
             <div ref={messagesEndRef} />
           </Stack>
 
@@ -144,7 +144,7 @@ function Chatbot() {
                   '& fieldset': { borderColor: 'rgba(255,255,255,0.18)' },
                 }}
               />
-              <IconButton type="submit" aria-label="Send message" disabled={isLoading || !input.trim()} sx={{ color: '#f5c15d' }}>
+              <IconButton type="submit" aria-label="Send message" disabled={isLoading || !input.trim()} sx={{ color: '#b8cede' }}>
                 <SendIcon />
               </IconButton>
             </Stack>
@@ -156,7 +156,7 @@ function Chatbot() {
           color="primary"
           aria-label="Open HackPack AI"
           onClick={() => setIsOpen((open) => !open)}
-          sx={{ position: 'fixed', right: { xs: 12, sm: 24 }, bottom: { xs: 12, sm: 24 }, zIndex: 1301, background: 'linear-gradient(135deg, #ff4d4d, #e69a2d)' }}
+          sx={{ position: 'fixed', right: { xs: 12, sm: 24 }, bottom: { xs: 12, sm: 24 }, zIndex: 1301, background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)' }}
         >
           {isOpen ? <CloseIcon /> : <AutoAwesomeIcon />}
         </Fab>

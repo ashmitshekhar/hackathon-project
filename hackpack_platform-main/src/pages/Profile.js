@@ -61,7 +61,7 @@ function Profile() {
               sx={{
                 width: 120,
                 height: 120,
-                background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+                background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
                 border: '4px solid rgba(255, 255, 255, 0.1)',
                 boxShadow: '0 8px 32px rgba(255, 77, 77, 0.2)',
               }}
@@ -78,7 +78,7 @@ function Profile() {
                     color: '#fff',
                     fontWeight: 'bold',
                     mb: 1,
-                    background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+                    background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
                   }}
@@ -90,7 +90,7 @@ function Profile() {
                 </Typography>
                 <Box sx={{ display: 'flex', gap: 1, mb: 2 }}>
                   <Chip
-                    icon={<CodeIcon sx={{ color: '#FF4D4D !important' }} />}
+                    icon={<CodeIcon sx={{ color: '#8eabc3 !important' }} />}
                     label="10 Hackathons"
                     sx={{
                       color: '#fff',
@@ -99,7 +99,7 @@ function Profile() {
                     }}
                   />
                   <Chip
-                    icon={<GroupIcon sx={{ color: '#F9CB28 !important' }} />}
+                    icon={<GroupIcon sx={{ color: '#b8cede !important' }} />}
                     label="5 Teams"
                     sx={{
                       color: '#fff',
@@ -108,7 +108,7 @@ function Profile() {
                     }}
                   />
                   <Chip
-                    icon={<EmojiEventsIcon sx={{ color: '#FF4D4D !important' }} />}
+                    icon={<EmojiEventsIcon sx={{ color: '#8eabc3 !important' }} />}
                     label="3 Wins"
                     sx={{
                       color: '#fff',
@@ -307,7 +307,7 @@ function Profile() {
                       <FolderIcon 
                         sx={{ 
                           fontSize: 40,
-                          color: '#FF4D4D',
+                          color: '#8eabc3',
                         }} 
                       />
                       <Box sx={{ flex: 1 }} />

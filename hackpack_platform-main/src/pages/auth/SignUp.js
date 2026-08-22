@@ -41,7 +41,7 @@ function SignUp() {
       <TextField label="GitHub URL" margin="normal" value={form.github} onChange={update('github')} />
       <TextField label="LinkedIn URL" margin="normal" value={form.linkedin} onChange={update('linkedin')} />
     </Box>
-    <Button type="submit" fullWidth variant="contained" disabled={busy} sx={{ mt: 3, py: 1.4, background: 'linear-gradient(135deg,#FF4D4D,#F9CB28)' }}>{busy ? 'Creating account...' : 'Create account'}</Button>
+    <Button type="submit" fullWidth variant="contained" disabled={busy} sx={{ mt: 3, py: 1.4, background: 'linear-gradient(135deg,#5f7f9b,#8eabc3)' }}>{busy ? 'Creating account...' : 'Create account'}</Button>
     <Box sx={{ mt: 3, textAlign: 'center' }}><Typography component="span" sx={{ color: 'rgba(255,255,255,.7)' }}>Already have an account? </Typography><Link to="/login">Sign in</Link></Box>
   </Paper></Container>;
 }

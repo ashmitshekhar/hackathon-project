@@ -119,7 +119,7 @@ function HackathonMap() {
           color: '#fff',
           mb: 4,
           textAlign: 'center',
-          background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+          background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
           fontWeight: 'bold',
@@ -190,12 +190,12 @@ function HackathonMap() {
                   >
                     <circle
                       r={6}
-                      fill={selectedLocation === `${country}-${city}` ? "#F9CB28" : "#FF4D4D"}
+                      fill={selectedLocation === `${country}-${city}` ? "#b8cede" : "#8eabc3"}
                       stroke="#fff"
                       strokeWidth={2}
                       style={{
                         cursor: 'pointer',
-                        filter: `drop-shadow(0 0 4px ${selectedLocation === `${country}-${city}` ? "#F9CB28" : "#FF4D4D"})`,
+                        filter: `drop-shadow(0 0 4px ${selectedLocation === `${country}-${city}` ? "#b8cede" : "#8eabc3"})`,
                         transition: 'all 0.3s ease',
                       }}
                     />

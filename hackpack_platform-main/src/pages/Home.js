@@ -20,6 +20,7 @@ function Home() {
           width: '100%',
           height: '100%',
           objectFit: 'cover',
+          filter: 'saturate(0.58) brightness(0.72) contrast(0.94)',
           zIndex: 0,
           pointerEvents: 'none',
         }}
@@ -30,7 +31,7 @@ function Home() {
           position: 'absolute',
           inset: 0,
           zIndex: 1,
-          background: 'linear-gradient(180deg, rgba(10, 14, 25, 0.56), rgba(10, 14, 25, 0.82))',
+          background: 'linear-gradient(180deg, rgba(16, 19, 24, 0.48), rgba(16, 19, 24, 0.88))',
           pointerEvents: 'none',
         }}
       />

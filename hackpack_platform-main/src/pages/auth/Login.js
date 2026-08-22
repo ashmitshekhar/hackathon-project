@@ -31,7 +31,7 @@ function Login() {
 		{error && <Alert severity="error" sx={{ mb: 2 }}>{error}</Alert>}
 		<TextField label="Email" type="email" required fullWidth margin="normal" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} />
 		<TextField label="Password" type="password" required fullWidth margin="normal" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} />
-		<Button type="submit" fullWidth variant="contained" disabled={busy} sx={{ mt: 3, py: 1.4, background: 'linear-gradient(135deg,#FF4D4D,#F9CB28)' }}>{busy ? 'Signing in...' : 'Sign in'}</Button>
+		<Button type="submit" fullWidth variant="contained" disabled={busy} sx={{ mt: 3, py: 1.4, background: 'linear-gradient(135deg,#5f7f9b,#8eabc3)' }}>{busy ? 'Signing in...' : 'Sign in'}</Button>
 		<Box sx={{ mt: 3, textAlign: 'center' }}><Typography component="span" sx={{ color: 'rgba(255,255,255,.7)' }}>New to HackPack? </Typography><Link to="/signup">Create an account</Link></Box>
 	</Paper></Container>;
 }

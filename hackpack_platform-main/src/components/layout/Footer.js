@@ -22,8 +22,8 @@ function Footer() {
           left: 0,
           right: 0,
           height: '2px',
-          background: 'linear-gradient(90deg, #e6b89c, #d8cfc4, #e6b89c)',
-          boxShadow: '0 0 20px rgba(230, 184, 156, 0.3)',
+          background: 'linear-gradient(90deg, #5f7f9b, #b8cede, #5f7f9b)',
+          boxShadow: '0 0 20px rgba(142, 171, 195, 0.3)',
         },
         '&::after': {
           content: '""',
@@ -32,7 +32,7 @@ function Footer() {
           right: '0%',
           width: '600px',
           height: '600px',
-          background: 'radial-gradient(circle, rgba(230, 184, 156, 0.1) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(142, 171, 195, 0.1) 0%, transparent 70%)',
           transform: 'translate(50%, -50%)',
           pointerEvents: 'none',
         },
@@ -47,7 +47,7 @@ function Footer() {
           left: '5%',
           width: '200px',
           height: '200px',
-          background: 'radial-gradient(circle, rgba(216, 207, 196, 0.05) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(184, 206, 222, 0.05) 0%, transparent 70%)',
           borderRadius: '50%',
         }}
       />
@@ -58,7 +58,7 @@ function Footer() {
           right: '15%',
           width: '300px',
           height: '300px',
-          background: 'radial-gradient(circle, rgba(230, 184, 156, 0.05) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(142, 171, 195, 0.05) 0%, transparent 70%)',
           borderRadius: '50%',
         }}
       />
@@ -79,7 +79,7 @@ function Footer() {
                 mb: 2,
                 textShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)',
                 fontWeight: 700,
-                color: '#e6b89c',
+                color: '#b8cede',
                 position: 'relative',
                 '&::after': {
                   content: '""',
@@ -88,7 +88,7 @@ function Footer() {
                   left: 0,
                   width: '40px',
                   height: '2px',
-                  background: 'linear-gradient(90deg, #e6b89c, transparent)',
+                  background: 'linear-gradient(90deg, #8eabc3, transparent)',
                 }
               }}
             >
@@ -104,7 +104,7 @@ function Footer() {
                 '&:hover': {
                   transform: 'translateX(8px)',
                   transition: 'transform 0.3s ease',
-                  color: '#d8cfc4'
+                  color: '#b8cede'
                 }
               }}
             >
@@ -157,7 +157,7 @@ function Footer() {
                   textDecoration: 'none',
                   transition: 'all 0.3s ease',
                   '&:hover': {
-                    color: '#d8cfc4',
+                    color: '#b8cede',
                     transform: 'translateX(8px)',
                   }
                 }}

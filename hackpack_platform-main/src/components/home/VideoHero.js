@@ -94,14 +94,14 @@ function VideoHero() {
               fontWeight: 800,
               position: 'relative',
               display: 'inline-block',
-              background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+              background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
               backgroundClip: 'text',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent',
               textShadow: '0 0 30px rgba(255, 77, 77, 0.3)',
               '&::after': {
                 content: showCursor ? '"│"' : '""',
-                color: '#FF4D4D',
+                color: '#b8cede',
                 marginLeft: '5px',
                 animation: 'blink 1s step-end infinite',
               },
@@ -137,7 +137,7 @@ function VideoHero() {
                 transform: 'translateX(-50%)',
                 width: '60%',
                 height: '2px',
-                background: 'linear-gradient(90deg, transparent, #FF4D4D, transparent)',
+                background: 'linear-gradient(90deg, transparent, #8eabc3, transparent)',
               },
             }}
           >
@@ -147,7 +147,7 @@ function VideoHero() {
               sx={{
                 opacity: subText.length < fullSubText.length ? 1 : 0,
                 animation: 'blink 1s step-end infinite',
-                color: '#FF4D4D',
+                color: '#b8cede',
               }}
             >
               |

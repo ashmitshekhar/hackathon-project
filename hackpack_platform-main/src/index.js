@@ -6,33 +6,40 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// Create a custom theme with warm, earthy colors
+// Keep the interface cool and low-contrast so the video remains the focus.
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#a0522d',
-      light: '#e6b89c',
-      dark: '#8b4513',
+      main: '#8eabc3',
+      light: '#b8cede',
+      dark: '#5f7f9b',
     },
     secondary: {
-      main: '#d8cfc4',
+      main: '#b8cede',
     },
     background: {
-      default: '#f5f5f5',
-      paper: '#ffffff',
+      default: '#101318',
+      paper: '#1b1e24',
     },
     text: {
-      primary: '#8b4513',
-      secondary: '#a0522d',
+      primary: '#eef3f6',
+      secondary: '#c1ccd4',
     },
   },
   typography: {
+    fontFamily: 'DM Sans, Segoe UI, sans-serif',
+    h1: { fontFamily: 'Cormorant Garamond, Georgia, serif' },
+    h2: { fontFamily: 'Cormorant Garamond, Georgia, serif' },
     h3: {
+      fontFamily: 'Cormorant Garamond, Georgia, serif',
       fontWeight: 600,
-      color: '#8b4513',
+      color: '#eef3f6',
     },
+    h4: { fontFamily: 'Cormorant Garamond, Georgia, serif' },
+    h5: { fontFamily: 'Cormorant Garamond, Georgia, serif' },
+    h6: { fontFamily: 'Cormorant Garamond, Georgia, serif' },
     allVariants: {
-      color: '#8b4513',
+      color: '#eef3f6',
     },
   },
   components: {

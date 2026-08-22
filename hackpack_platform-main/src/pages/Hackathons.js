@@ -436,7 +436,7 @@ function Hackathons() {
                     width: 8,
                     height: 8,
                     borderRadius: '50%',
-                    background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+                    background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
                   }}
                 />
               )}
@@ -508,15 +508,15 @@ function Hackathons() {
                   sx={{
                     mb: 3,
                     p: 2,
-                    background: 'rgba(255, 77, 77, 0.1)',
+                    background: 'rgba(142, 171, 195, 0.1)',
                     borderRadius: '10px',
-                    border: '1px solid rgba(255, 77, 77, 0.2)',
+                    border: '1px solid rgba(142, 171, 195, 0.2)',
                   }}
                 >
                   <Typography
                     variant="subtitle2"
                     sx={{
-                      color: '#FF4D4D',
+                      color: '#b8cede',
                       fontWeight: 'bold',
                       mb: 1,
                     }}

@@ -59,7 +59,7 @@ function UserMenu() {
             <Avatar
               sx={{
                 bgcolor: 'transparent',
-                background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+                background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
                 color: '#fff',
                 boxShadow: '0 4px 12px rgba(255, 77, 77, 0.3)',
                 border: '2px solid transparent',
@@ -118,7 +118,7 @@ function UserMenu() {
                     color: '#fff',
                     fontWeight: 'bold',
                     fontSize: '1.1rem',
-                    background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+                    background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent',
                   }}
@@ -158,7 +158,7 @@ function UserMenu() {
                 },
               }}
             >
-              <PersonIcon sx={{ mr: 2, color: '#FF4D4D' }} />
+              <PersonIcon sx={{ mr: 2, color: '#b8cede' }} />
               View Profile
             </MenuItem>
             <MenuItem
@@ -171,7 +171,7 @@ function UserMenu() {
                 },
               }}
             >
-              <LogoutIcon sx={{ mr: 2, color: '#FF4D4D' }} />
+                    <LogoutIcon sx={{ mr: 2, color: '#b8cede' }} />
               Logout
             </MenuItem>
           </Menu>
@@ -185,10 +185,10 @@ function UserMenu() {
               color: '#fff',
               borderRadius: '10px',
               px: 3,
-              background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+              background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
               transition: 'all 0.3s ease',
               '&:hover': {
-                background: 'linear-gradient(135deg, #F9CB28, #FF4D4D)',
+                background: 'linear-gradient(135deg, #8eabc3, #5f7f9b)',
                 transform: 'translateY(-2px)',
                 boxShadow: '0 5px 15px rgba(255, 77, 77, 0.3)',
               },
@@ -204,10 +204,10 @@ function UserMenu() {
               color: '#fff',
               borderRadius: '10px',
               px: 3,
-              border: '2px solid #FF4D4D',
+              border: '2px solid #8eabc3',
               transition: 'all 0.3s ease',
               '&:hover': {
-                borderColor: '#F9CB28',
+                borderColor: '#b8cede',
                 transform: 'translateY(-2px)',
                 boxShadow: '0 5px 15px rgba(255, 77, 77, 0.3)',
               },

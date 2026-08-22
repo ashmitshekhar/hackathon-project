@@ -13,9 +13,9 @@ function Navbar() {
     <AppBar 
       position="static" 
       sx={{
-        background: 'rgba(17, 25, 40, 0.95)',
-        backdropFilter: 'blur(12px)',
-        borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+        background: 'rgba(16, 19, 24, 0.72)',
+        backdropFilter: 'blur(18px)',
+        borderBottom: '1px solid rgba(255, 238, 220, 0.16)',
         boxShadow: 'none',
         width: '100vw',
       }}
@@ -38,7 +38,7 @@ function Navbar() {
               gap: 1,
               '&:hover .logo-icon': {
                 transform: 'rotateY(180deg)',
-                background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+                background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
               },
               '&:hover .logo-text': {
                 backgroundSize: '200% 200%',
@@ -53,11 +53,11 @@ function Navbar() {
                 justifyContent: 'center',
                 width: 40,
                 height: 40,
-                background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+                background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
                 borderRadius: '12px',
                 transform: 'perspective(1000px) rotateY(0deg)',
                 transition: 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)',
-                boxShadow: '0 4px 20px rgba(255, 77, 77, 0.2)',
+                boxShadow: '0 4px 20px rgba(196, 119, 92, 0.24)',
                 position: 'relative',
                 overflow: 'hidden',
                 '&::before': {
@@ -86,17 +86,17 @@ function Navbar() {
               sx={{ 
                 fontWeight: 800,
                 letterSpacing: '0.5px',
-                background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+                background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
                 backgroundClip: 'text',
                 textFillColor: 'transparent',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 transition: 'all 0.3s ease',
                 fontSize: '1.5rem',
-                textShadow: '0 2px 10px rgba(255, 77, 77, 0.3)',
+                textShadow: '0 2px 10px rgba(142, 171, 195, 0.24)',
               }}
             >
-              HackPack
+              NodeDrop
             </Typography>
           </Box>
           <Box sx={{ 
@@ -115,7 +115,7 @@ function Navbar() {
               '&:hover': {
                 transform: 'translateY(-2px)',
                 background: 'rgba(255, 255, 255, 0.1)',
-                boxShadow: '0 4px 20px rgba(255, 77, 77, 0.15)',
+                boxShadow: '0 4px 20px rgba(196, 119, 92, 0.15)',
               }
             }
           }}>
@@ -132,7 +132,7 @@ function Navbar() {
                   left: 0,
                   width: '100%',
                   height: '2px',
-                  background: 'linear-gradient(90deg, #FF4D4D, #F9CB28)',
+                  background: 'linear-gradient(90deg, #5f7f9b, #8eabc3)',
                   transform: 'scaleX(0)',
                   transformOrigin: 'right',
                   transition: 'transform 0.3s ease',
@@ -151,7 +151,7 @@ function Navbar() {
               badgeContent={notificationCount} 
               sx={{
                 '& .MuiBadge-badge': {
-                  background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+                  background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
                   color: '#fff',
                 }
               }}
@@ -163,7 +163,7 @@ function Navbar() {
                   cursor: 'pointer',
                   '&:hover': {
                     transform: 'translateY(-2px)',
-                    filter: 'drop-shadow(0 4px 10px rgba(255, 77, 77, 0.3))',
+                    filter: 'drop-shadow(0 4px 10px rgba(214, 166, 107, 0.26))',
                   },
                   transition: 'all 0.3s ease',
                 }} 

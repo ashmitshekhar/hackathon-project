@@ -16,19 +16,19 @@ function Features() {
       title: "Projects",
       description: "Showcase your hackathon projects with live demos and source code. Build your portfolio and share your innovations with the community.",
       icon: <FolderIcon sx={{ fontSize: 40 }} />,
-      gradient: "linear-gradient(135deg, #FF4D4D 0%, #F9CB28 100%)",
+      gradient: "linear-gradient(135deg, #5f7f9b 0%, #8eabc3 100%)",
     },
     {
       title: "Team Formation",
       description: "Find the perfect teammates based on skills, interests, and experience. Build diverse teams for maximum innovation potential.",
       icon: <GroupsIcon sx={{ fontSize: 40 }} />,
-      gradient: "linear-gradient(135deg, #F9CB28 0%, #FF4D4D 100%)",
+      gradient: "linear-gradient(135deg, #8eabc3 0%, #b8cede 100%)",
     },
     {
       title: "Real-time Collaboration",
       description: "Connect and collaborate with your team in real-time. Share ideas, code, and resources seamlessly.",
       icon: <ConnectWithoutContactIcon sx={{ fontSize: 40 }} />,
-      gradient: "linear-gradient(135deg, #FF4D4D 0%, #F9CB28 100%)",
+      gradient: "linear-gradient(135deg, #b8cede 0%, #5f7f9b 100%)",
     },
   ];
 
@@ -39,8 +39,8 @@ function Features() {
         py: 8,
         px: { xs: 2, sm: 4, md: 6, lg: 8 },
         position: 'relative',
-        background: 'rgba(17, 25, 40, 0.3)',
-        backdropFilter: 'blur(10px)',
+        background: 'rgba(16, 19, 24, 0.42)',
+        backdropFilter: 'blur(14px)',
       }}
     >
       {/* Animated Background */}
@@ -53,8 +53,8 @@ function Features() {
           bottom: 0,
           opacity: 0.1,
           background: `
-            repeating-linear-gradient(45deg, #FF4D4D 0px, transparent 2px),
-            repeating-linear-gradient(-45deg, #F9CB28 0px, transparent 2px)
+            repeating-linear-gradient(45deg, rgba(142, 171, 195, 0.35) 0px, transparent 2px),
+            repeating-linear-gradient(-45deg, rgba(184, 206, 222, 0.25) 0px, transparent 2px)
           `,
           backgroundSize: '100px 100px',
           animation: 'moveBackground 20s linear infinite',
@@ -72,7 +72,7 @@ function Features() {
         sx={{
           color: '#fff',
           mb: 6,
-          textShadow: '0 2px 10px rgba(255, 77, 77, 0.3)',
+          textShadow: '0 2px 10px rgba(142, 171, 195, 0.24)',
           position: 'relative',
           '&::after': {
             content: '""',
@@ -82,7 +82,7 @@ function Features() {
             transform: 'translateX(-50%)',
             width: '100px',
             height: '4px',
-            background: 'linear-gradient(90deg, #FF4D4D, #F9CB28)',
+            background: 'linear-gradient(90deg, #5f7f9b, #8eabc3)',
             borderRadius: '2px',
           }
         }}
@@ -100,17 +100,18 @@ function Features() {
                 height: '100%', 
                 display: 'flex', 
                 flexDirection: 'column',
-                background: 'rgba(255, 255, 255, 0.05)',
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
+                background: 'linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.045))',
+                backdropFilter: 'blur(18px)',
+                border: '1px solid rgba(255, 238, 220, 0.18)',
+                boxShadow: '0 16px 40px rgba(0, 0, 0, 0.2)',
                 transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
                 transform: hoveredIndex === index ? 
                   'translateZ(50px) rotateX(10deg) rotateY(10deg)' : 
                   'translateZ(0) rotateX(0) rotateY(0)',
                 transformStyle: 'preserve-3d',
                 '&:hover': {
-                  boxShadow: `0 20px 40px rgba(255, 77, 77, 0.2),
-                             inset 0 0 20px rgba(255, 77, 77, 0.1)`,
+                  boxShadow: `0 20px 40px rgba(196, 119, 92, 0.2),
+                             inset 0 0 20px rgba(214, 166, 107, 0.1)`,
                 },
                 position: 'relative',
                 '&::before': {
@@ -140,12 +141,12 @@ function Features() {
               >
                 <Box 
                   sx={{ 
-                    color: '#FF4D4D',
+                    color: '#b8cede',
                     mb: 2,
                     transform: hoveredIndex === index ? 'translateZ(30px)' : 'none',
                     transition: 'transform 0.5s ease',
                     '& > svg': {
-                      filter: 'drop-shadow(0 4px 8px rgba(255, 77, 77, 0.3))',
+                      filter: 'drop-shadow(0 4px 8px rgba(142, 171, 195, 0.28))',
                       animation: hoveredIndex === index ? 'float 3s ease-in-out infinite' : 'none',
                       '@keyframes float': {
                         '0%, 100%': { transform: 'translateY(0)' },

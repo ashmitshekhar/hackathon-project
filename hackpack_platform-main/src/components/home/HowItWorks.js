@@ -50,8 +50,8 @@ function HowItWorks() {
         py: 8,
         px: { xs: 2, sm: 4, md: 6, lg: 8 },
         position: 'relative',
-        background: 'rgba(17, 25, 40, 0.3)',
-        backdropFilter: 'blur(10px)',
+        background: 'rgba(16, 19, 24, 0.42)',
+        backdropFilter: 'blur(14px)',
       }}
     >
       <Typography 
@@ -61,7 +61,7 @@ function HowItWorks() {
         sx={{ 
           color: '#fff',
           mb: 6,
-          textShadow: '0 2px 10px rgba(255, 77, 77, 0.3)',
+          textShadow: '0 2px 10px rgba(142, 171, 195, 0.24)',
         }}
       >
         How It Works
@@ -81,7 +81,7 @@ function HowItWorks() {
             transform: 'translateX(-50%)',
             width: '4px',
             height: '100%',
-            background: 'linear-gradient(180deg, #FF4D4D, #F9CB28)',
+            background: 'linear-gradient(180deg, #5f7f9b, #8eabc3, #b8cede)',
             borderRadius: '4px',
             boxShadow: '0 0 20px rgba(255, 77, 77, 0.3)',
           }
@@ -113,14 +113,14 @@ function HowItWorks() {
                 height: '40px',
                 borderRadius: '50%',
                 background: activeStep >= index 
-                  ? 'linear-gradient(135deg, #FF4D4D, #F9CB28)'
+                  ? 'linear-gradient(135deg, #5f7f9b, #8eabc3)'
                   : 'rgba(255, 255, 255, 0.1)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 fontSize: '1.5rem',
                 boxShadow: activeStep >= index 
-                  ? '0 0 20px rgba(255, 77, 77, 0.3)'
+                  ? '0 0 20px rgba(142, 171, 195, 0.26)'
                   : 'none',
                 transition: 'all 0.3s ease',
                 zIndex: 2,
@@ -135,14 +135,14 @@ function HowItWorks() {
                 width: '45%',
                 padding: '20px',
                 borderRadius: '12px',
-                background: 'rgba(255, 255, 255, 0.05)',
-                backdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
+                background: 'linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.045))',
+                backdropFilter: 'blur(18px)',
+                border: '1px solid rgba(255, 238, 220, 0.18)',
                 transition: 'all 0.3s ease',
                 transform: activeStep >= index ? 'scale(1)' : 'scale(0.95)',
                 '&:hover': {
                   transform: 'scale(1.02)',
-                  boxShadow: '0 10px 20px rgba(255, 77, 77, 0.2)',
+                  boxShadow: '0 10px 20px rgba(196, 119, 92, 0.2)',
                 },
                 position: 'relative',
                 '&::before': {
@@ -153,7 +153,7 @@ function HowItWorks() {
                   transform: 'translateY(-50%)',
                   borderWidth: '15px',
                   borderStyle: 'solid',
-                  borderColor: `transparent ${index % 2 === 0 ? '' : '#FF4D4D'} transparent ${index % 2 === 0 ? '#FF4D4D' : ''}`,
+                  borderColor: `transparent ${index % 2 === 0 ? '' : '#5f7f9b'} transparent ${index % 2 === 0 ? '#5f7f9b' : ''}`,
                   opacity: activeStep >= index ? 1 : 0.3,
                 },
               }}
@@ -164,7 +164,7 @@ function HowItWorks() {
                   color: '#fff',
                   mb: 1,
                   textShadow: '0 2px 4px rgba(0, 0, 0, 0.3)',
-                  background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+                  background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
                   WebkitBackgroundClip: 'text',
                   WebkitTextFillColor: 'transparent',
                 }}

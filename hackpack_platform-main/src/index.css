@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+  --accent: #8eabc3;
+  --accent-bright: #b8cede;
+  --accent-deep: #5f7f9b;
+  --accent-soft: rgba(142, 171, 195, 0.16);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,11 +19,11 @@ body {
   overflow-x: hidden;
   width: 100vw;
   min-height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'DM Sans', 'Segoe UI', sans-serif;
+  color: #f4eee6;
+  background: #101318;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background: #101318;
 }
 
 code {
@@ -26,4 +35,9 @@ code {
   width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+::selection {
+  color: #101318;
+  background: #8eabc3;
 }

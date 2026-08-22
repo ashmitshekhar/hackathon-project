@@ -94,8 +94,8 @@ function TeamFormation() {
             sx={{
               width: 60,
               height: 60,
-              border: '2px solid #FF4D4D',
-              background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+              border: '2px solid #8eabc3',
+              background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
             }}
           />
           <Box sx={{ ml: 2 }}>
@@ -104,7 +104,7 @@ function TeamFormation() {
               sx={{
                 color: '#fff',
                 fontWeight: 'bold',
-                background: 'linear-gradient(135deg, #FF4D4D, #F9CB28)',
+                background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
               }}
@@ -131,9 +131,9 @@ function TeamFormation() {
                 label={skill}
                 size="small"
                 sx={{
-                  background: 'rgba(255, 77, 77, 0.1)',
+                  background: 'rgba(142, 171, 195, 0.1)',
                   color: '#fff',
-                  border: '1px solid rgba(255, 77, 77, 0.3)',
+                  border: '1px solid rgba(142, 171, 195, 0.3)',
                 }}
               />
             ))}
@@ -150,7 +150,7 @@ function TeamFormation() {
           <Rating
             value={member.experience}
             readOnly
-            icon={<CodeIcon sx={{ color: '#FF4D4D' }} />}
+            icon={<CodeIcon sx={{ color: '#8eabc3' }} />}
             emptyIcon={<CodeIcon sx={{ color: 'rgba(255, 77, 77, 0.3)' }} />}
           />
         </Box>
@@ -246,7 +246,7 @@ function TeamFormation() {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <SearchIcon sx={{ color: '#FF4D4D' }} />
+                <SearchIcon sx={{ color: '#8eabc3' }} />
               </InputAdornment>
             ),
           }}
@@ -262,7 +262,7 @@ function TeamFormation() {
                 borderColor: 'rgba(255, 77, 77, 0.5)',
               },
               '&.Mui-focused fieldset': {
-                borderColor: '#FF4D4D',
+                borderColor: '#8eabc3',
               },
             },
           }}
@@ -295,7 +295,7 @@ function TeamFormation() {
               mt: 4,
             }}
           >
-            <CircularProgress sx={{ color: '#FF4D4D' }} />
+            <CircularProgress sx={{ color: '#8eabc3' }} />
           </Box>
         ) : (
           members.map((member) => (
