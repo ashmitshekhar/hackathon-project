@@ -223,7 +223,7 @@ function Footer() {
             padding: '20px 0',
           }}
         >
-          © {new Date().getFullYear()} HackPack. All rights reserved.
+          © {new Date().getFullYear()} NodeDrop. All rights reserved.
         </Typography>
       </Container>
     </Box>

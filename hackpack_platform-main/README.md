@@ -1,8 +1,8 @@
 # Getting Started with Create React App
 
-## HackPack AI
+## NodeDrop AI
 
-The platform includes a floating HackPack AI assistant on every page. It provides built-in hackathon guidance without configuration. To enable model-powered replies, add an OpenAI key to `backend/.env`:
+The platform includes a floating NodeDrop AI assistant on every page. It provides built-in hackathon guidance without configuration. To enable model-powered replies, add an OpenAI key to `backend/.env`:
 
 ```env
 OPENAI_API_KEY=your-key-here

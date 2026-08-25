@@ -24,26 +24,32 @@ router.post('/', async (req, res) => {
         return res.status(400).json({ message: 'A message is required' });
     }
 
-    if (!process.env.OPENAI_API_KEY) {
+    const apiKey = process.env.OPENAI_API_KEY?.trim();
+
+    if (!apiKey || apiKey === 'your-key-here') {
         return res.json({ reply: fallbackReply(latestMessage) });
     }
 
     try {
-        const response = await fetch('https://api.openai.com/v1/chat/completions', {
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 20000);
+        const response = await fetch(process.env.OPENAI_API_URL || 'https://api.openai.com/v1/chat/completions', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+                Authorization: `Bearer ${apiKey}`,
             },
             body: JSON.stringify({
                 model: process.env.OPENAI_MODEL || 'gpt-4o-mini',
                 messages: [
-                    { role: 'system', content: 'You are HackPack AI, a concise and friendly assistant for a hackathon platform. Help users discover hackathons, form teams, and improve project ideas.' },
+                    { role: 'system', content: 'You are NodeDrop AI, a concise and friendly assistant for a hackathon platform. Help users discover hackathons, form teams, and improve project ideas.' },
                     ...messages.slice(-10),
                 ],
                 max_tokens: 250,
             }),
+            signal: controller.signal,
         });
+        clearTimeout(timeout);
         const data = await response.json();
         if (!response.ok) throw new Error(data.error?.message || 'AI provider request failed');
         return res.json({ reply: data.choices?.[0]?.message?.content || fallbackReply(latestMessage) });

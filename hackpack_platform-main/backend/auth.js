@@ -88,7 +88,7 @@ router.get('/members', authenticateToken, async (req, res) => {
         const members = await User.find(filter).select('-password').limit(24).lean();
         res.json(members.map((member) => ({
             ...member,
-            role: 'HackPack builder',
+              role: 'NodeDrop builder',
             skills: member.skills || [],
             experience: member.experience || 0,
             avatar: member.avatar || '',

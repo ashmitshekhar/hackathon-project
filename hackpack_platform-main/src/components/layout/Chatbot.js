@@ -20,7 +20,7 @@ import { chatApi } from '../../services/api';
 
 const starterMessage = {
   role: 'assistant',
-  content: 'Hi! I am HackPack AI. Ask me about finding a hackathon, forming a team, or getting your project ready.',
+  content: 'Hi! I am NodeDrop AI. Ask me about finding a hackathon, forming a team, or getting your project ready.',
 };
 
 const suggestions = ['Find a hackathon', 'How do I form a team?', 'Project ideas'];
@@ -87,7 +87,7 @@ function Chatbot() {
                   <SmartToyIcon />
                 </Avatar>
                 <Box>
-                  <Typography fontWeight={800}>HackPack AI</Typography>
+                  <Typography fontWeight={800}>NodeDrop AI</Typography>
                   <Typography variant="caption" sx={{ opacity: 0.85 }}>Your hackathon copilot</Typography>
                 </Box>
               </Stack>
@@ -137,8 +137,8 @@ function Chatbot() {
                 size="small"
                 value={input}
                 onChange={(event) => setInput(event.target.value)}
-                placeholder="Ask HackPack AI..."
-                inputProps={{ 'aria-label': 'Message HackPack AI' }}
+                placeholder="Ask NodeDrop AI..."
+                inputProps={{ 'aria-label': 'Message NodeDrop AI' }}
                 sx={{
                   '& .MuiOutlinedInput-root': { color: '#fff', borderRadius: 2, bgcolor: 'rgba(255,255,255,0.06)' },
                   '& fieldset': { borderColor: 'rgba(255,255,255,0.18)' },
@@ -151,10 +151,10 @@ function Chatbot() {
           </Box>
         </Paper>
       )}
-      <Tooltip title={isOpen ? 'Close HackPack AI' : 'Open HackPack AI'}>
+      <Tooltip title={isOpen ? 'Close NodeDrop AI' : 'Open NodeDrop AI'}>
         <Fab
           color="primary"
-          aria-label="Open HackPack AI"
+          aria-label="Open NodeDrop AI"
           onClick={() => setIsOpen((open) => !open)}
           sx={{ position: 'fixed', right: { xs: 12, sm: 24 }, bottom: { xs: 12, sm: 24 }, zIndex: 1301, background: 'linear-gradient(135deg, #5f7f9b, #8eabc3)' }}
         >
